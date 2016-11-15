@@ -1,0 +1,28 @@
+<resources>>
+    <color name="white_opaque">#9F9F9F</color>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="CustomTheme.Dialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:buttonBarButtonStyle">@style/CustomTheme.Dialog.Button</item>
+        <!-- See caveat -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+
+    </style>
+    <style name="CustomTheme.Dialog.Button" parent="@android:style/Widget.Holo.Light.Button.Borderless.Small">
+        <item name="android:background">#DFDFDF</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="@style/Base.Animation.AppCompat.Dialog">
+        <item name="android:windowBackground">?attr/colorPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:layout_width"> match_parent </item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+</resources>

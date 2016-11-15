@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Buttons"
+        android:key="pref_key_storage_settings">
+        <ListPreference
+            android:title="Button 1"
+            android:defaultValue="+1"
+            android:key="button1_value"
+            />
+        <ListPreference
+            android:title="Button 2"
+            android:defaultValue="+2"
+            />
+    </PreferenceCategory>
+</PreferenceScreen>
